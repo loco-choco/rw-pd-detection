@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="./netfx.props" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{5D075FCA-AFEC-44C9-8C5F-272ECF4CFF0D}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>pddetection</RootNamespace>
+        <AssemblyName>pddetection</AssemblyName>
+        <TargetFramework>net48</TargetFramework>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+	<!-- <Reference Include="netstandard" /> -->
+    <Reference Include="Assembly-CSharp">
+        <HintPath>../../rw-ref/PUBLIC-Assembly-CSharp.dll</HintPath>
+	      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+        <HintPath>../../rw-ref/BepInEx.dll</HintPath>
+	      <Private>false</Private>
+    </Reference>
+    <Reference Include="HOOKS-Assembly-CSharp">
+        <HintPath>../../rw-ref/HOOKS-Assembly-CSharp.dll</HintPath>
+	      <Private>false</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+        <HintPath>../../rw-ref/UnityEngine.dll</HintPath>
+	      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+        <HintPath>../../rw-ref/UnityEngine.CoreModule.dll</HintPath>
+	      <Private>false</Private>
+    </Reference>
+    </ItemGroup>
+    <ItemGroup>
+	<Content Include="thumbnail.png">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <Link>../thumbnail.png</Link>
+	</Content>
+	<Content Include="modinfo.json">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <Link>../modinfo.json</Link>
+	</Content>
+	<Content Include="sprites/warning.png">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <Link>../sprites/warning.png</Link>
+	</Content>
+	<Content Include="sprites/danger.png">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <Link>../sprites/danger.png</Link>
+	</Content>
+	<Content Include="sprites/warning-pointer.png">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <Link>../sprites/warning-pointer.png</Link>
+	</Content>
+	<Content Include="sprites/danger-pointer.png">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <Link>../sprites/danger-pointer.png</Link>
+	</Content>
+    </ItemGroup>
+</Project>

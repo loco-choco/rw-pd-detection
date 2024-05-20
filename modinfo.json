@@ -1,0 +1,10 @@
+{
+  "id": "locochoco.pddetection",
+  "name": "Payday Detection",
+  "authors": "Locochoco",
+  "description": "Adds payday style detection visual",
+  "requirements": [],
+  "requirements_names": [],
+  "tags": [ "Cosmetics" ],
+  "checksum_override_version": false
+}
