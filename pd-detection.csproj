@@ -35,15 +35,15 @@
     <ItemGroup>
 	<!-- <Reference Include="netstandard" /> -->
     <Reference Include="Assembly-CSharp">
-        <HintPath>../../rw-ref/PUBLIC-Assembly-CSharp.dll</HintPath>
+      <HintPath>libs/BepInEx/utils/PUBLIC-Assembly-CSharp.dll</HintPath>
 	      <Private>false</Private>
     </Reference>
     <Reference Include="BepInEx">
-        <HintPath>../../rw-ref/BepInEx.dll</HintPath>
+      <HintPath>libs/BepInEx/core/BepInEx.dll</HintPath>
 	      <Private>false</Private>
     </Reference>
     <Reference Include="HOOKS-Assembly-CSharp">
-        <HintPath>../../rw-ref/HOOKS-Assembly-CSharp.dll</HintPath>
+      <HintPath>libs/BepInEx/plugins/HOOKS-Assembly-CSharp.dll</HintPath>
 	      <Private>false</Private>
     </Reference>
     <Reference Include="System" />
@@ -51,38 +51,38 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-        <HintPath>../../rw-ref/UnityEngine.dll</HintPath>
+      <HintPath>libs/Managed/UnityEngine.dll</HintPath>
 	      <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-        <HintPath>../../rw-ref/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>libs/Managed/UnityEngine.CoreModule.dll</HintPath>
 	      <Private>false</Private>
     </Reference>
     </ItemGroup>
     <ItemGroup>
 	<Content Include="thumbnail.png">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  <Link>../thumbnail.png</Link>
+	  <Link>thumbnail.png</Link>
 	</Content>
 	<Content Include="modinfo.json">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  <Link>../modinfo.json</Link>
+	  <Link>modinfo.json</Link>
 	</Content>
 	<Content Include="sprites/warning.png">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  <Link>../sprites/warning.png</Link>
+	  <Link>sprites/warning.png</Link>
 	</Content>
 	<Content Include="sprites/danger.png">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  <Link>../sprites/danger.png</Link>
+	  <Link>sprites/danger.png</Link>
 	</Content>
 	<Content Include="sprites/warning-pointer.png">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  <Link>../sprites/warning-pointer.png</Link>
+	  <Link>sprites/warning-pointer.png</Link>
 	</Content>
 	<Content Include="sprites/danger-pointer.png">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  <Link>../sprites/danger-pointer.png</Link>
+	  <Link>sprites/danger-pointer.png</Link>
 	</Content>
     </ItemGroup>
 </Project>

@@ -124,15 +124,15 @@ namespace PDDetection
 	    is_player_in_danger = (threatTracker.mostThreateningCreature.representedCreature == hudPlayer.abstractCreature);
 	    }
 	    
-	    if(preyTracker != null && preyTracker.currentPrey!= null){
+	    //if(preyTracker != null && preyTracker.currentPrey!= null){
 	    /*for (int i = 0; i < preyTracker.TotalTrackedPrey; i++){
 		var creature_rep = preyTracker.prey[i].critRep;
 	  	if (creature_rep.representedCreature == hudPlayer.abstractCreature){
 		    is_player_in_danger = true;
 		}
 	    }*/
-	    is_player_in_danger = (preyTracker.currentPrey.critRep.representedCreature == hudPlayer.abstractCreature);
-	    }
+	    //is_player_in_danger = (preyTracker.currentPrey.critRep.representedCreature == hudPlayer.abstractCreature);
+	    //}
 	    is_creature_dangerous |= is_player_in_danger;
 	}
 
